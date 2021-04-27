@@ -4,8 +4,7 @@ module.exports = {
         let amex = new RegExp('^3[47][0-9]{13}$');
         let mastercard = new RegExp('^5[1-5][0-9]{14}$');
         let visa = new RegExp('4[0-9]{12}(?:[0-9]{3})?$');
-        let disco1 = new RegExp('^6011[0-9]{12}[0-9]*$');
-        console.log('req.body -- ',req)
+        let discover = new RegExp('^6011[0-9]{12}[0-9]*$');
         let cardDetails = req.body.cardNumber
         cardDetails.forEach(value => {
             let cardName = 'Unknown'
@@ -34,7 +33,7 @@ module.exports = {
             if (mastercard.test(value)) {
                 cardName = 'MASTERCARD';
             }
-            if (disco1.test(value)) {
+            if (discover.test(value)) {
                 cardName = 'DISCOVER';
             }
             if (visa.test(value)) {

@@ -1,12 +1,12 @@
 {
-  "name": "cheemsburbger-api",
+  "name": "checking_card_validation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Aparna",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "helmet": "^4.2.0"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "jest": "^25.5.1",
@@ -21,15 +21,5 @@
   },
   "jest": {
     "testEnvironment": "node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/starkfire/cheemsburbger-api.git"
-  },
-  "author": "starkfire",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/starkfire/cheemsburbger-api/issues"
-  },
-  "homepage": "https://github.com/starkfire/cheemsburbger-api#readme"
+  }
 }
