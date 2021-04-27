@@ -1,0 +1,35 @@
+{
+  "name": "cheemsburbger-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0"
+  },
+  "devDependencies": {
+    "jest": "^25.5.1",
+    "jest-junit": "^10.0.0",
+    "supertest": "^4.0.2",
+    "husky": "^4.2.5",
+    "@types/jest": "^25.2.1"
+  },
+  "scripts": {
+    "test": "npx jest --ci --reporter=text-lcov --reporter=lcov --passWithNoTests --coverage",
+    "start": "node server.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starkfire/cheemsburbger-api.git"
+  },
+  "author": "starkfire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starkfire/cheemsburbger-api/issues"
+  },
+  "homepage": "https://github.com/starkfire/cheemsburbger-api#readme"
+}
